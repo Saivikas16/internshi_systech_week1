@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Library Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Template Library Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="browseLink">Browse</a></li>
+                <li><a href="#" id="uploadLink">Upload</a></li>
+                <li><a href="#" id="loginLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <input type="text" id="searchInput" placeholder="Search templates...">
+        <button id="searchButton">Search</button>
+    </section>
+
+    <section id="filters">
+        <h2>Filters</h2>
+        <label for="categoryFilter">Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="business">Business</option>
+            <option value="marketing">Marketing</option>
+            <option value="education">Education</option>
+        </select>
+        <label for="formatFilter">Format:</label>
+        <select id="formatFilter">
+            <option value="all">All</option>
+            <option value="PPT">PowerPoint</option>
+            <option value="Docs">Document</option>
+            <option value="Sheets">Spreadsheet</option>
+        </select>
+    </section>
+
+    <section id="templates">
+        <!-- Template previews will be dynamically added here -->
+        <div class="template">
+            <h3>Template 1</h3>
+            <p>Category: Business</p>
+            <p>Format: PPT</p>
+            <img src="business.jpg" alt="Template 1 Preview">
+        </div>
+        <div class="template">
+            <h3>Template 2</h3>
+            <p>Category: Marketing</p>
+            <p>Format: Docs</p>
+            <img src="market.jpg" alt="Template 2 Preview">
+        </div>
+        <div class="template">
+            <h3>Template 3</h3>
+            <p>Category: Education</p>
+            <p>Format: Sheets</p>
+            <img src="edu.jpg" alt="Template 3 Preview">
+        </div>
+        <!-- Add more template previews as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Template Library</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
